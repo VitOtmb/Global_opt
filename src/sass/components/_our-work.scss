@@ -3,26 +3,11 @@
     &_title {
         margin-bottom: 20px;
     }
-    &__divider {
-        width: 148px;
-        height: 1px;
-        background-color: $main-color;
-        margin: 0 auto;
-        margin-bottom: 17px;
-    }
-    &__descr {
-        font-size: 21px;
-        line-height: 24px;
-        font-weight: 300;
-        color: #2e2e2e;
-        margin: 0 auto;
-        text-align: center;
-        max-width: 880px;
-    }
     &__wrapper {
         margin-top: 37px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item {
         max-width: 360px;
@@ -46,4 +31,22 @@
         text-align: center;
         line-height: 20px;
     }
+}
+
+.divider-mini {
+    width: 148px;
+    height: 1px;
+    background-color: $main-color;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+.descr {
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #2e2e2e;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 880px;
 }

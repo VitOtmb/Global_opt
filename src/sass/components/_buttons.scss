@@ -19,4 +19,39 @@
         height: 45px;
         font-size: 12px;
     }
+    &_prices {
+        width: 160px;
+        height: 45px;
+        font-size: 12px;
+        display: block;
+        margin: 0 auto;
+    }
+    &_consultation {
+        display: block;
+        width: 180px;
+        height: 45px;
+        margin: 0 auto;
+        position: absolute;
+        top: 236px;
+        left: 50%;
+        transform: translate(-50%);
+        &::before {
+            content: "";
+            width: 469px;
+            height: 1px;
+            background-color: #898989;
+            position: absolute;
+            top: 24px;
+            right: 193px;
+        }
+        &::after {
+            content: "";
+            width: 469px;
+            height: 1px;
+            background-color: #898989;
+            position: absolute;
+            top: 24px;
+            left: 193px;
+        }
+    }
 }
