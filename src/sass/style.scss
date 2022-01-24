@@ -1,11 +1,11 @@
 * {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
 }
 
 .container {
-    max-width: 1145px;
-    margin: 0 auto;
+   max-width: 1145px;
+   margin: 0 auto;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
@@ -20,3 +20,7 @@
 @import "components/prices";
 @import "components/consultation";
 @import "components/scheme";
+@import "components/reviews";
+@import "components/questions";
+@import "components/map";
+@import "components/footer";

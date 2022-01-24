@@ -1,0 +1,56 @@
+.reviews {
+   position: relative;
+   max-width: 610px;
+   padding: 51px 0 0 0;
+   margin: 0 auto;
+   &__slider {
+      margin: 31px 0 0 0;
+      &_left {
+         position: absolute;
+         border: none;
+         background: rgba($color: #fff, $alpha: 0.1);
+         top: 50%;
+         left: 30%;
+         cursor: pointer;
+         &:hover {
+            path {
+               fill: red;
+            }
+         }
+      }
+      &_right {
+         position: absolute;
+         border: none;
+         background: rgba($color: #fff, $alpha: 0.1);
+         top: 50%;
+         right: 30%;
+         cursor: pointer;
+         &:hover {
+            path {
+               fill: red;
+            }
+         }
+      }
+   }
+   &__img {
+      width: 114px;
+      height: 114px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 100%;
+   }
+   &__subtitle {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+      color: #3a3a3a;
+      text-align: center;
+   }
+   &__descr {
+      font-size: 14.1px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: center;
+      margin: 8px 0 0 0;
+   }
+}

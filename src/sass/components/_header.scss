@@ -1,46 +1,51 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &_logo {
-        margin-top: 23px;
-    }
-    &__link {
-        font-size: 15px;
-        line-height: 16px;
-        font-weight: 400;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 0 14px 0 9px;
-        border-right: 1px dashed rgba($color: #fff, $alpha: 0.4);
-        transition: 0.3s all;
-        &:last-child {
-            border: none;
-        }
-        &:hover {
-            color: $main-color;
-            border-bottom: 1px solid $main-color;
-        }
-    }
-    &__phone {
-        color: #ffffff;
-    }
-    &__questions {
-        display: block;
-        text-align: end;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 300;
-    }
-    &__number {
-        font-size: 19px;
-        line-height: 24px;
-        font-weight: 700;
-        color: #ffffff;
-        text-decoration: none;
-        transition: 0.3s all;
-        &:hover {
-            color: $main-color;
-        }
-    }
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   &_logo {
+      margin-top: 23px;
+   }
+   &__link {
+      font-size: 15px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0 14px 0 9px;
+      border-right: 1px dashed rgba($color: #fff, $alpha: 0.4);
+      transition: 0.3s all;
+      &:last-child {
+         border: none;
+      }
+      &:hover {
+         color: $main-color;
+         border-bottom: 1px solid $main-color;
+      }
+   }
+}
+
+.phone-wrp {
+   display: flex;
+   .phone {
+      color: #ffffff;
+      margin-right: 19px;
+   }
+   .question {
+      display: block;
+      text-align: end;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+   }
+   .number {
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+      transition: 0.3s all;
+      &:hover {
+         color: $main-color;
+      }
+   }
 }
