@@ -21,3 +21,38 @@ const prev = document.querySelector('.reviews__slider_left'),
 next.addEventListener('click',function() {
    slider.goTo('next');
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+   const arrowUp = document.querySelector('.up');
+
+   function showArrowUp() {
+      arrowUp.classList.add('show');
+      arrowUp.classList.remove('hide');
+   }
+
+   function hideArrowHide() {
+      arrowUp.classList.add('hide');
+      arrowUp.classList.remove('show');
+   }
+
+   function showArrowUpByScroll() {
+      let scrolled = window.scrollY || document.documentElement.scrollTop;
+      if(scrolled > 500) {
+         showArrowUp();
+      } else if (scrolled < 500) {
+         hideArrowHide();
+      }
+   }
+
+   window.addEventListener('scroll', showArrowUpByScroll);
+
+   arrowUp.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.scrollTo(0, 0);
+      console.log('куксики');
+   });
+
+});

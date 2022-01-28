@@ -1,79 +1,79 @@
 .promo {
-    height: 680px;
-    background: url("../images/background/promo_bg.jpg") center (center / cover)
-        no-repeat;
-    &__text {
-        font-size: 24px;
-        line-height: 1.2;
-        font-weight: 300;
-        color: #ffffff;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-    &__title {
-        font-family: "Roboto Condensed";
-        font-size: 72px;
-        line-height: 1.2;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $main-color;
-        margin: 0;
-        text-align: center;
-    }
-    &__subtitle {
-        font-family: "Roboto Condensed";
-        font-size: 42px;
-        line-height: 1.2;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: #ffffff;
-        text-align: center;
-    }
-    .divider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 38px;
-        &__first-line,
-        &__second-line {
-            width: 387px;
-            height: 1px;
-            background-color: #fff;
-        }
-        &__round {
-            width: 10px;
-            height: 10px;
-            border-radius: 100%;
-            background-color: #fff;
-            margin: 0 15px;
-        }
-    }
-    .peculiarities {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        &__item {
-            max-width: 265px;
-            margin-top: 35px;
-        }
-        &__img {
-            display: block;
-            margin: 0 auto;
-            width: 64px;
-            height: 48px;
-        }
-        &__descr {
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: 300;
-            color: #ffffff;
-            text-align: center;
-            margin-top: 19px;
-        }
-    }
-    &_button {
-        display: block;
-        margin: 0 auto;
-        margin-top: 39px;
-    }
+   height: 680px;
+   background: url("../images/background/promo_bg.jpg") center (center / cover)
+      no-repeat;
+   &__text {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 15px;
+   }
+   &__title {
+      font-family: "Roboto Condensed";
+      font-size: 72px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $main-color;
+      margin: 0;
+      text-align: center;
+   }
+   &__subtitle {
+      font-family: "Roboto Condensed";
+      font-size: 42px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+   }
+   .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 38px;
+      &__first-line,
+      &__second-line {
+         width: 387px;
+         height: 1px;
+         background-color: #fff;
+      }
+      &__round {
+         width: 10px;
+         height: 10px;
+         border-radius: 100%;
+         background-color: #fff;
+         margin: 0 15px;
+      }
+   }
+   .peculiarities {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &__item {
+         max-width: 265px;
+         margin-top: 35px;
+      }
+      &__img {
+         display: block;
+         margin: 0 auto;
+         width: 64px;
+         height: 48px;
+      }
+      &__descr {
+         font-size: 16px;
+         line-height: 22px;
+         font-weight: 300;
+         color: #ffffff;
+         text-align: center;
+         margin-top: 19px;
+      }
+   }
+   &_button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 39px;
+   }
 }
