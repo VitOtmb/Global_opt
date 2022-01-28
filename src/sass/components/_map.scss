@@ -1,40 +1,38 @@
 .map {
    position: relative;
    height: 500px;
-   iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-   }
+   background: url("../images/background/map_bg.jpg") center (center / cover)
+      no-repeat;
    &__info {
       position: absolute;
-      max-width: 311px;
-      max-height: 158px;
-      padding: 28px 49px 28px 33px;
-      background-color: #ffff;
+      display: flex;
+      max-width: 410px;
+      max-height: 160px;
       top: 30%;
       left: 45%;
+      align-items: center;
    }
    &__pointer {
-      // position: absolute;
-      top: 45%;
-      left: 40%;
+      width: 70px;
+      height: 80px;
+      margin-right: 28px;
    }
    &__descr {
-      // position: absolute;
       font-size: 14px;
       font-weight: 300;
       line-height: 20px;
       color: #3a3a3a;
-      // &::before {
-      //    content: "";
-      //    border: 15px solid transparent;
-      //    border-bottom: 15px solid #fbfaf8;
-      //    position: absolute;
-      //    top: 55%;
-      //    left: -9%;
-      //    transform: rotate(-90deg);
-      // }
+      background-color: #ffff;
+      padding: 28px 49px 27px 33px;
+      &::before {
+         content: "";
+         border: 15px solid transparent;
+         border-bottom: 15px solid #fbfaf8;
+         position: absolute;
+         top: 40%;
+         left: 60px;
+         transform: rotate(-90deg);
+      }
       span {
          font-size: 16px;
          line-height: 20px;

@@ -46,13 +46,23 @@ document.addEventListener('DOMContentLoaded', () => {
          hideArrowHide();
       }
    }
-
    window.addEventListener('scroll', showArrowUpByScroll);
 
-   arrowUp.addEventListener('click', (event) => {
-      event.preventDefault();
-      window.scrollTo(0, 0);
-      console.log('куксики');
-   });
+   let scrolled, timer;
 
+   arrowUp.addEventListener('click', () => {
+      scrolled = window.scrollY;
+      scrollToTop();
+   }); 
+
+   function scrollToTop() {     
+      if(scrolled > 0) {
+         window.scrollTo(0 , scrolled);
+         scrolled = scrolled - 130; 
+         timer = setTimeout(scrollToTop, 20);
+      } else {
+         clearInterval(timer);
+         scrollTo(0, 0);
+      }
+   }
 });
