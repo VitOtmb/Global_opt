@@ -9,7 +9,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
-@import "base/normalize";
+/* @import "base/normalize"; */
 @import "base/variables";
 @import "components/buttons";
 @import "components/promo";
@@ -25,3 +25,5 @@
 @import "components/map";
 @import "components/footer";
 @import "components/up";
+@import "components/modal-call";
+@import "base/media";

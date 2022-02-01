@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       arrowUp.classList.remove('hide');
    }
 
-   function hideArrowHide() {
+   function hideArrowUp() {
       arrowUp.classList.add('hide');
       arrowUp.classList.remove('show');
    }
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if(scrolled > 500) {
          showArrowUp();
       } else if (scrolled < 500) {
-         hideArrowHide();
+         hideArrowUp();
       }
    }
    window.addEventListener('scroll', showArrowUpByScroll);
@@ -58,11 +58,35 @@ document.addEventListener('DOMContentLoaded', () => {
    function scrollToTop() {     
       if(scrolled > 0) {
          window.scrollTo(0 , scrolled);
-         scrolled = scrolled - 130; 
+         scrolled = scrolled - 90; 
          timer = setTimeout(scrollToTop, 20);
       } else {
          clearInterval(timer);
          scrollTo(0, 0);
       }
    }
+
+
+// Модальное окно
+
+   const btnCall = document.querySelectorAll('.button.button_header');
+   const modalCall = document.querySelector('#call-me');
+   const closeCall = document.querySelector('.modal-call__close');
+
+   function showModalCall(button, modal) {
+      button.forEach(btn =>{
+         btn.addEventListener('click', () => {
+            modal.style.right = '33%';
+         });
+      });
+   }
+
+   function closeModalCall(buttonClose, modal) {
+      buttonClose.addEventListener('click', () => {
+         modal.style.right = '-100%';
+      });
+   }
+
+   showModalCall(btnCall, modalCall);
+   closeModalCall(closeCall, modalCall);
 });

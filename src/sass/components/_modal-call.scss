@@ -1,0 +1,50 @@
+/* .overlay {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   display: none;
+   background-color: rgba($color: #000000, $alpha: 0.4);
+} */
+
+.modal-call {
+   position: fixed;
+   width: 450px;
+   min-height: 300px;
+   background-color: rgba($color: #000000, $alpha: 0.8);
+   padding: 30px;
+   top: 25%;
+   right: -100%;
+   transition: 0.5s all;
+   &__title {
+      font-size: 30px;
+      line-height: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0;
+      text-align: center;
+   }
+   &__close {
+      position: absolute;
+      font-size: 40px;
+      color: $main-color;
+      top: 0;
+      right: 15px;
+      cursor: pointer;
+   }
+   form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px;
+      input {
+         width: 250px;
+         height: 50px;
+         border-radius: 10px;
+         border: none;
+         margin-top: 10px;
+         padding: 10px;
+      }
+   }
+}

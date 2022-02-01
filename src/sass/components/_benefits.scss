@@ -1,42 +1,42 @@
 .benefits {
-	padding: 57px 0 15px 0;
-	background-color: #f3f3f3;
-	&__wrapper {
-		display: grid;
-		justify-content: space-between;
-		grid-template-columns: repeat(auto-fill, 550px);
-		grid-template-rows: repeat(5, auto);
-		grid-auto-rows: auto;
-		row-gap: 36px;
-	}
-	&__item {
-		display: grid;
-		grid-template-columns: repeat(2, auto);
-		column-gap: 20px;
-	}
-	&__descr {
-		font-size: 14px;
-		font-weight: 300;
-		color: #3a3a3a;
-	}
-	&__minititle {
-		font-size: 16px;
-		line-height: 22px;
-		font-weight: 700;
-		color: $main-color;
-		margin-bottom: 5px;
-	}
-	&__text {
-		line-height: 20px;
-	}
+   padding: 57px 0 15px 0;
+   background-color: #f3f3f3;
+   &__wrapper {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: repeat(auto-fill, 550px);
+      grid-template-rows: repeat(5, auto);
+      grid-auto-rows: auto;
+      row-gap: 36px;
+   }
+   &__item {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      column-gap: 20px;
+   }
+   &__descr {
+      font-size: 14px;
+      font-weight: 300;
+      color: #3a3a3a;
+   }
+   &__minititle {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      color: $main-color;
+      margin-bottom: 5px;
+   }
+   &__text {
+      line-height: 20px;
+   }
 }
 
 .title {
-	font-size: 26px;
-	line-height: 23px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #2e2e2e;
-	margin: 0 0 31px 0;
-	text-align: center;
+   font-size: 26px;
+   line-height: 23px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #2e2e2e;
+   margin: 0 0 31px 0;
+   text-align: center;
 }
